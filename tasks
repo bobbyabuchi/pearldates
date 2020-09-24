@@ -1,0 +1,79 @@
+The Story
+=========
+There are these wonderful people in your life (Pearls) and you want to always remember important dates in their lives (Pearl Dates), probably to give them a call or send them a gift. To show the love, the care and honour you have for them. So you decided to build a system that enables you to keep track of these dates.
+-----------------------------------
+
+1. directories(folders) and files
+
+	- assets
+		- css
+		- images
+		- javascript
+
+	- pages/views
+		- signup.php
+		- login.php
+		- welcome.php(dashboard)
+		- addpearl.php
+		- addpearldates.php
+		- viewpearl.php
+		- editpearl.php
+		- editpearldate.php
+		- deletepearldate.php
+		- deletepearl.php
+	- includes/controllers/codes/resusable
+		- model.php
+		- db_config.php
+		- auth.php
+		- head.php
+		- links.php
+		- nav.php
+		- footer.php
+		- sidebar.php
+		- usersidebar(userbar).php
+		- pearlsidebar(pearlbar).php
+
+2. index.php
+
+3. database design
+
+	- users table
+		* user_id
+		- name
+		- email
+		- password
+		- username
+		- image
+		- date
+
+ 	- pearldates table
+ 		* pearldate_id
+ 		# pearl_id
+ 		- date_title
+ 		- day
+ 		- month
+ 		- description
+ 		- date
+
+ 	- pearls table
+ 		* pearl_id
+ 		# user_id
+ 		- name
+ 		- bio
+ 		- email
+ 		- phone1
+ 		- phone2
+ 		- image
+ 		- date
+------------------------------------
+
+Steps to Automation
+===================
+1. Preliminary Investigation - How it works in real life 
+	(understanding/identifying a problem) 
+2. System Ana - breakdown the problem in to unit parts
+3. Design the solution (the real deal, software engineering is about)
+4. Choose a language and other tools
+5. Translate the solution into codes 
+	Implement/automate (coding/programming)
+6. Test, debug, document, maintain
